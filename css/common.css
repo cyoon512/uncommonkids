@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'ComicSansMS';
+    src: url('../font/ComicSansMS.woff') format('woff');
+    /* =>폰트가 적용 안될때 경로 수정해보기 (../)이건 상위 폴더를 뜻함 */
+}
+/* https://jinyisland.kr/post/font/ */
+
+body{
+    background-color: #F6F2F1;
+}
+.wrap{
+    max-width: 1760px;
+    margin: 60px 80px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+section{
+    border-bottom: 5px solid #000;
+}
+.sec_wrap{
+    margin: 116px 0;
+}
+.title{
+    font-family: 'ComicSansMS';
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.more_btn_wrap{
+    margin: 0 auto;
+}
+.more_btn{
+    width: 190px;
+}
+.st0{
+    transition: 0.2s ease-in-out;
+}
+.more_btn:hover .st0{
+    fill: #FFA200;
+}
+.st3{
+    font-family: 'dangrek';
+    font-size: 34px;
+}
+
+@media screen and (max-width:1520px) {
+    .wrap{
+        margin: 30px 40px;
+    }
+    .sec_wrap{
+        margin: 7.6vw 0;
+    }
+    .title{
+        font-size: 5.9vw;
+    }
+}
+@media screen and (max-width:1180px) {
+    .wrap{
+        margin: 20px;
+        border: 3px solid #1d1d1d;
+    }
+    section{
+        border-bottom: 3px solid #1d1d1d;
+    }
+    .title{
+        font-size: 7vw;
+    }
+
+    .more_btn{
+        width: 165px;
+    }
+    .st3{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .wrap{
+        margin: 10px;
+        border: 2px solid #1d1d1d;
+    }
+    section{
+        border-bottom: 2px solid #1d1d1d;
+    }
+    .sec_wrap{
+        margin: 20vw 0;
+    }
+    .title{
+        font-size: 9.6vw;
+    }
+
+    .more_btn{
+        width: 31vw;
+    }
+    .st3{
+        font-size: 36px;
+    }
+}
